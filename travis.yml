@@ -23,10 +23,10 @@ before_script:
   - PATH="${HOME}/.bin:${PATH}"
   - curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
   - chmod a+rx ~/.bin/repo
+  - git config --global color.ui true
   - cd twrp
   - repo init -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-9.0
   - repo sync
-  - git config --global color.ui false
   # Download the TWRP Compressed Source Files from PhantomZone54's Release
   # > More on https://github.com/PhantomZone54/twrp_sources_norepo/releases/latest
   # Uncomment & Use below line If Building for Lollipop-based Devices
